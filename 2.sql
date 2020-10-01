@@ -1,6 +1,6 @@
 create sequence if not exists s1;
 create table if not exists t1 (
-a int default (nextval('s1')), 
+a int default (nextval(s1)), 
 b int,
 primary key (a)
 );
